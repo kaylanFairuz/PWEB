@@ -1,0 +1,51 @@
+.text-image-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.side-image {
+  width: 150px;
+  height: auto;
+  opacity: 0.6;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px grey;
+}
+
+.text-content {
+  max-width: 1500px;
+  font-size: 0.9em;
+}
+
+.banner {
+  background-image: url(../assets/earth.jpg);
+  background-position: 50% 50%;
+}
+
+.slide > * {
+  width: 40%;
+}
+
+@media screen and (max-width: 720px) {
+  .text-image-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .side-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .slide > * {
+    text-align: center;
+    font-size: 1em;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .banner {
+    background-repeat: repeat;
+  }
+}
